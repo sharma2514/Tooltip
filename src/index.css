@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  background-color: grey;
+}
+
+/* main */
+.main {
+  position: relative;
+}
+
+/* select */
+select {
+  width: 100px;
+  height: 30px;
+  font-size: 17px;
+  border-radius: 5px;
+  background-color: lightblue;
+}
+
+select option {
+  margin: 5px;
+  font-size: 17px;
+}
+
+#option-tag {
+  margin: 50px;
+}
+
+/* buttons */
+.buttons {
+  position: relative;
+  /* border: 1px solid black; */
+  width: 210px;
+  top: 20vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#press {
+  width: 200px;
+  height: 80px;
+  font-size: 25px;
+  font-weight: 800;
+  border-radius: 30px;
+  border: 1px solid black;
+  background-color: rgba(187, 8, 163, 0.719);
+  box-shadow: inset 3px rgba(58, 7, 51, 0.719);
+}
+
+tooltip-psoition {
+  position: relative;
+}
+
+.position {
+  position: absolute;
+  margin: 0;
+  width: 250px;
+  height: 60px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+
+.position div {
+  margin: 0;
+  position: relative;
+  font-size: 18px;
+  margin-left: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#top-pos {
+  top: -80px;
+  left: -25px;
+}
+
+#left-pos {
+  left: -270px;
+  top: 10px;
+}
+
+#bottom-pos {
+  top: 100px;
+  left: -25px;
+}
+
+#right-pos {
+  left: 220px;
+  top: 10px;
+}
+
+/*  */
+
+#top-pos :before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 28px;
+  left: 98px;
+  transform: rotate(45deg);
+  background-color: black;
+  z-index: -1;
+}
+
+#left-pos :before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  /* top: 30px */
+  left: 229px;
+  transform: rotate(45deg);
+  background-color: black;
+  z-index: -1;
+}
+
+#bottom-pos :before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -26px;
+  left: 98px;
+  transform: rotate(45deg);
+  background-color: black;
+  z-index: -1;
+}
+
+#right-pos :before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -15px;
+  transform: rotate(45deg);
+  background-color: black;
+  z-index: -1;
+}
